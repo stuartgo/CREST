@@ -1,0 +1,10 @@
+# configs/fraction_ablation.yaml
+# Data-efficiency experiment: how does performance scale with training set size?
+# Uses the best-performing location/modality combination at multiple fractions.
+
+experiments:
+  - location:        [thigh, back]
+    model_type:      [lstm, transformer, tcn]
+    temperature:     false
+    single_day:      false
+    train_fraction:  [0.1, 0.2, 0.3, 0.4, 0.5, 0.75]

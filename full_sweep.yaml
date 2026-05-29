@@ -1,0 +1,10 @@
+# configs/full_sweep.yaml
+# Runs every location × model × modality combination at full training data.
+# Equivalent to the original hard-coded for-loop.
+
+experiments:
+  - location:        [thigh, back]
+    model_type:      [lstm, transformer, tcn, mamba,moment]
+    temperature:     [false, true]
+    single_day:      [false, true]
+    train_fraction:  1.0
