@@ -1,10 +1,7 @@
 # Circadian Acrophase Prediction
 
-Predicts the **circadian acrophase** (the peak time of the activity/temperature rhythm) from wrist/thigh actigraphy recordings using deep sequence models. Part of the HUNT4 study.
+Predicts the **circadian acrophase** (the peak time of the temperature rhythm) from wrist/thigh accelerometer recordings using deep sequence models. 
 
-## Overview
-
-The acrophase is encoded as a circular quantity — a (sin, cos) pair — to avoid the discontinuity at midnight. Models are trained to minimise MSE on this representation; evaluation uses **circular MAE in hours**.
 
 ### Supported models
 
